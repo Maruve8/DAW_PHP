@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-
     <title>Tablas de Multiplicar</title>
     <style>
         table {
@@ -34,18 +33,19 @@ $tablas = [
     "tercera" => 11
 ];
 
-foreach ($tablas as $nombre => $numero) {
-    echo "<h2>{$nombre} tabla</h2>";
-    echo "<table>";
-    echo "<tr><th>Multiplicador</th><th>Resultado</th></tr>";
+echo "<table>";
+echo "<tr><th>Primera Tabla</th><th>Segunda Tabla</th><th>Tercera Tabla</th></tr>";
 
-    for ($i = 1; $i <= 10; $i++) {
+for ($i = 1; $i <= 10; $i++) {
+    echo "<tr>";
+    foreach ($tablas as $nombre => $numero) {
         $resultado = $numero * $i;
-        echo "<tr><td>{$numero} x {$i}</td><td>{$resultado}</td></tr>";
+        echo "<td>{$numero} x {$i} = {$resultado}</td>";
     }
-
-    echo "</table>";
+    echo "</tr>";
 }
+
+echo "</table>";
 ?>
 
 </body>
