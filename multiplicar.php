@@ -42,6 +42,7 @@ for ($i = 1; $i <= 10; $i++) {
         $resultado = $numero * $i;
         echo "<td>{$numero} x {$i} = {$resultado}</td>";
     }
+    
     echo "</tr>";
 }
 
