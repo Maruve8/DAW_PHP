@@ -1,13 +1,13 @@
 <?php
 
-// Incluimos las clases
+// Incluyo las clases
 include 'Jugador.php';
 include 'Equipo.php';
 
-// Creamos un equipo
+// Creo un equipo
 $equipo = new Equipo();
 
-// Creamos 9 jugadores y los añadimos al equipo
+// Creo 9 jugadores y lo añado al equipo
 for ($i = 1; $i <= 9; $i++) {
     $jugador = new Jugador($i);
     $ptosAleatorios = rand(20, 100);
@@ -15,6 +15,6 @@ for ($i = 1; $i <= 9; $i++) {
     $equipo->addJug($jugador);
 }
 
-// Mostramos la puntuación total del equipo
+// Se muestra la puntuación total del equipo
 echo "Puntuación total del equipo: " . $equipo->getTotal();
 ?>

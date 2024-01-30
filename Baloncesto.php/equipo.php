@@ -21,7 +21,7 @@ class Equipo
                 return $jugador;
             }
         }
-        return null; // Devuelve null si no se encuentra el jugador
+        return null; // Devuelve null si no encuentra el jugador
     }
 
     public function getTotal()
